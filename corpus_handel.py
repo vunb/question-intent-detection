@@ -32,19 +32,19 @@ def load_data_and_labels():
     Returns split sentences and labels.
     """
     # Load data from files
-    who_examples = list(open("/home/kirti/Downloads/question-classifier-cnn-tensorflow-master/corpus/qa_data.who", "r").readlines())
+    who_examples = list(open("qa_data.who", "r").readlines())
     who_examples = [s.strip() for s in who_examples]
     
-    when_examples = list(open("/home/kirti/Downloads/question-classifier-cnn-tensorflow-master/corpus/qa_data.when", "r").readlines())
+    when_examples = list(open("qa_data.when", "r").readlines())
     when_examples = [s.strip() for s in when_examples]
     
-    what_examples = list(open("/home/kirti/Downloads/question-classifier-cnn-tensorflow-master/corpus/qa_data.what", "r").readlines())
+    what_examples = list(open("qa_data.what", "r").readlines())
     what_examples = [s.strip() for s in what_examples]
 
-    affirmative_examples = list(open("/home/kirti/Downloads/question-classifier-cnn-tensorflow-master/corpus/qa_data.affirmative", "r").readlines())
+    affirmative_examples = list(open("qa_data.affirmative", "r").readlines())
     affirmative_examples = [s.strip() for s in affirmative_examples]
 
-    other_examples = list(open("/home/kirti/Downloads/question-classifier-cnn-tensorflow-master/corpus/qa_data.other", "r").readlines())
+    other_examples = list(open("qa_data.other", "r").readlines())
     other_examples = [s.strip() for s in other_examples]
  
  
